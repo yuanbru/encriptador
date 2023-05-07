@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8" name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>EncriptAlura</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="Imagenes/logo.png">
+    </header>
+
+    <main>
+        <div class="textoentrada">
+
+            <textarea class="escrito" placeholder="Ingrese su texto aqui" spellcheck="false" autofocus rows="30" cols="10"></textarea>
+
+            <div>
+                <h6 class="solo">
+                    <img id="caracter" src="https://api.iconify.design/bi/exclamation-circle-fill.svg"> Solo letras minúsculas y sin acentos
+                </h6>
+            </div>
+            <div class="botones">
+                <button class="encripta" onclick="btnEncriptar()">Encriptar</button>
+                <button class="desencripta" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="textosalida">
+
+            <textarea class="mensaje" cols="20" rows="10" readonly></textarea>
+            <p class="noencuentra">Ningún mensaje fue encontrado. </p>
+            <p class="aencriptar">Ingresa el texto que desees encriptar o desencriptar.</p>
+
+            <button class="copiar" onclick="btnCopiar()">Copiar</button>
+
+
+        </div>
+        <script src="script.js">
+        </script>
+    </main>
+
+    <footer>
+        <h6 class="info">Desarrollado por Yuly A. Beltran - Bogotá, Colombia - 2023</h6>
+    </footer>
+
+</body>
+
+
+</html>
